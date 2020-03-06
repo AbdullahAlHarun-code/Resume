@@ -22,7 +22,7 @@ Desktop Large screens
 ```
 
 ## Demo:
-A live demo can be found [here](https://www.google.com/).
+A live demo can be found [here](https://8000-cd8c0a77-0f83-41d9-9930-4e57bfc5927f.ws-eu01.gitpod.io/).
 
 ![Desktop Demo](http://radhunibelfast.com/wp-content/uploads/2020/03/demo.png "Desktop Demo")
 
