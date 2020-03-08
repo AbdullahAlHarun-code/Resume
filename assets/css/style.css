@@ -1,29 +1,40 @@
 /*
-	==========================================================================================================
+  ==========================================================================================================
 */
+
+
+/* Initial class set up*/
+
 body {
-  font-family: Georgia, "Times New Roman", Times, serif; }
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 
 .clear_fix {
   content: '';
   clear: both;
-  display: block; }
+  display: block;
+}
 
-.no-p {
-  padding: 0px; }
+.no-padding {
+  padding: 0px;
+}
 
-.no-m {
-  margin: 0px; }
-
-.no-mp {
+.no-margin {
   margin: 0px;
-  padding: 0px; }
+}
+
+.no-margin-padding {
+  margin: 0px;
+  padding: 0px;
+}
 
 .page-title-color {
-  color: #1A809C; }
+  color: #1A809C;
+}
 
 .text-color {
-  color: #1A809C; }
+  color: #1A809C;
+}
 
 .page-title {
   font-family: times, Times New Roman, times-roman, georgia, serif;
@@ -33,129 +44,138 @@ body {
   font-size: 41px;
   line-height: 44px;
   letter-spacing: -2px;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
-.para {
+.paragraph {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
   margin-top: 5px;
   margin-bottom: 0px;
   text-align: left;
   font-weight: normal;
-  color: #222; }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .para {
-      font-size: 2.5rem; } }
-  @media (max-width: 576px) {
-    .para {
-      font-size: 2.3rem; } }
+  color: #222;
+}
+
+
+/* 
+  Css for main-wrap          =================================================
+*/
 
 .main-wrap {
   position: relative;
-  background: #fff; }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .main-wrap {
-      background: #fff; } }
-  @media (max-width: 576px) {
-    .main-wrap {
-      background: #fff; } }
-  .main-wrap .mobile-menu-bar {
-    padding: 8px 10px;
-    margin: 1%;
-    position: absolute;
-    right: 1%;
-    z-index: 1;
-    margin-right: 0; }
-    .main-wrap .mobile-menu-bar i {
-      color: #23B0CC;
-      font-size: 3rem;
-      border: 1px solid #23B0CC;
-      padding: 3px 10px; }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .main-wrap .mobile-menu-bar i {
-          font-size: 6rem; } }
+  background: #fff;
+}
+
+.main-wrap .mobile-menu-bar {
+  padding: 8px 10px;
+  margin: 1%;
+  position: fixed;
+  right: 1%;
+  z-index: 1;
+  margin-right: 0;
+}
+
+.main-wrap .mobile-menu-bar i {
+  color: #23B0CC;
+  font-size: 3rem;
+  border: 1px solid #23B0CC;
+  padding: 3px 10px;
+}
+
+
+/* 
+  Css for content-wrap          =================================================
+*/
 
 .content-wrap {
-  padding-top: 100px; }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .content-wrap {
-      width: 100%;
-      padding-top: 0px; } }
-  @media (max-width: 576px) {
-    .content-wrap {
-      width: 100%;
-      padding-top: 0px; } }
-  .content-wrap .navbar-right {
-    margin-right: 0px; }
-    .content-wrap .navbar-right li {
-      padding-top: 15px;
-      padding-bottom: 15px; }
-      .content-wrap .navbar-right li a {
-        color: #000;
-        border-right: 1px solid #000;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        font-size: 20px; }
-        .content-wrap .navbar-right li a:hover {
-          color: #333;
-          background: none; }
-        .content-wrap .navbar-right li a:focus {
-          color: #333;
-          background: none; }
-    .content-wrap .navbar-right .last-child a {
-      border-right: none; }
+  padding-top: 100px;
+}
+
+.content-wrap .navbar-right {
+  margin-right: 0px;
+}
+
+.content-wrap .navbar-right li {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.content-wrap .navbar-right li a {
+  color: #000;
+  border-right: 1px solid #000;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 20px;
+}
+
+.content-wrap .navbar-right li a:hover {
+  color: #333;
+  background: none;
+}
+
+.content-wrap .navbar-right li a:focus {
+  color: #333;
+  background: none;
+}
+
+.content-wrap .navbar-right .last-child a {
+  border-right: none;
+}
+
+
+/* 
+  Css for main-content          =================================================
+*/
 
 .main-content .left-section {
   position: relative;
   text-align: center;
   background: #0e0e0e17;
-  padding: 20px; }
-  .main-content .left-section .para {
-    text-align: center;
-    padding: 15px;
-    font-size: 2rem; }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .main-content .left-section .para {
-        font-size: 3rem; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .main-content .left-section {
-      border-bottom: 30px solid #23B0CC; }
-      .main-content .left-section h2 {
-        font-size: 5rem; } }
-  @media (max-width: 576px) {
-    .main-content .left-section {
-      border-bottom: 10px solid #23B0CC; } }
-  .main-content .left-section img {
-    width: 90%; }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .main-content .left-section img {
-        width: 75%;
-        margin-top: 100px; } }
-    @media (max-width: 576px) {
-      .main-content .left-section img {
-        margin-top: 50px; } }
-  .main-content .left-section h3 {
-    color: #1A809C;
-    font-weight: bold; }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .main-content .left-section h3 {
-        font-size: 4rem; } }
-  .main-content .left-section h2 {
-    font-weight: bold;
-    line-height: 10px;
-    margin-top: 55px; }
-  .main-content .left-section .social-media {
-    margin-top: 20px; }
+  padding: 20px;
+}
+
+.main-content .left-section .paragraph {
+  text-align: center;
+  padding: 15px;
+  font-size: 2rem;
+}
+
+.main-content .left-section img {
+  width: 90%;
+}
+
+.main-content .left-section h3 {
+  color: #1A809C;
+  font-weight: bold;
+}
+
+.main-content .left-section h2 {
+  font-weight: bold;
+  line-height: 34px;
+  margin-top: 55px;
+}
+
+.main-content .left-section .social-media {
+  margin-top: 20px;
+}
+
 @media (min-width: 992px) {
   .main-content .right-section {
-    height: 80vh; } }
+    height: 80vh;
+  }
+}
+
 .main-content .right-section .content {
   width: 98%;
   background: #0e0e0e17;
-  padding: 10px; }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .main-content .right-section .content {
-      width: 100%; } }
+  padding: 10px;
+}
+
+
+/* 
+  Css for Social-media         =================================================
+*/
 
 .social-media i {
   padding: 15px 18px;
@@ -164,48 +184,53 @@ body {
   font-weight: bold;
   font-size: 20px;
   font-height: 30px;
-  color: #000; }
-  .social-media i:hover {
-    color: #1A809C; }
-  @media (min-width: 992px) {
-    .social-media i {
-      padding: 10px 13px;
-      border: 3px solid #000;
-      font-size: 18px; } }
+  color: #000;
+}
+
+.social-media i:hover {
+  color: #1A809C;
+}
+
+@media (min-width: 992px) {
+  .social-media i {
+    padding: 10px 13px;
+    border: 3px solid #000;
+    font-size: 18px;
+  }
+}
+
+
+/* 
+  Css for portfolio        =================================================
+*/
 
 .portfolio {
   text-align: center;
-  margin-top: 20px; }
-  @media (max-width: 576px) {
-    .portfolio {
-      margin-bottom: 20%; } }
-  .portfolio .portfolio-box {
-    width: 30%;
-    margin: 1%;
-    min-width: 100px;
-    background: #C7E9F1;
-    padding: 8px 10px;
-    display: inline-block; }
-    .portfolio .portfolio-box h3 {
-      font-weight: 600; }
-    .portfolio .portfolio-box p {
-      font-size: 1.8rem; }
-    @media (max-width: 576px) {
-      .portfolio .portfolio-box {
-        width: 49%;
-        margin: 0px 0px 8px 0px; }
-        .portfolio .portfolio-box p {
-          font-size: 1.8rem; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .portfolio .portfolio-box {
-        width: 47%;
-        margin: 0px 0px 8px 0px;
-        padding: 15px; }
-        .portfolio .portfolio-box h3 {
-          font-size: 3.5rem; }
-        .portfolio .portfolio-box p {
-          font-size: 3.1rem;
-          font-weight: normal; } }
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.portfolio .portfolio-box {
+  width: 30%;
+  margin: 1%;
+  min-width: 100px;
+  background: #C7E9F1;
+  padding: 8px 10px;
+  display: inline-block;
+}
+
+.portfolio .portfolio-box h3 {
+  font-weight: 600;
+}
+
+.portfolio .portfolio-box p {
+  font-size: 1.8rem;
+}
+
+
+/* 
+  Css for mobile menu   ==============================================
+*/
 
 .mobile-menu-wrap {
   display: none;
@@ -216,126 +241,307 @@ body {
   top: 0;
   left: 0;
   z-index: 10;
-  text-align: center; }
-  .mobile-menu-wrap .mobile-menu-bar {
-    padding: 8px 10px;
-    margin: 1%;
-    position: absolute;
-    right: 1%;
-    z-index: 20;
-    margin-right: 0; }
-    .mobile-menu-wrap .mobile-menu-bar i {
-      color: #fff;
-      font-size: 3rem;
-      border: 1px solid #fff;
-      padding: 3px 10px; }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .mobile-menu-wrap .mobile-menu-bar i {
-          font-size: 6rem; } }
-  .mobile-menu-wrap ul {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    .mobile-menu-wrap ul li {
-      list-style: none; }
-      .mobile-menu-wrap ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 3rem;
-        padding: 30px;
-        display: block; }
-        @media (min-width: 768px) and (max-width: 991px) {
-          .mobile-menu-wrap ul li a {
-            font-size: 6rem; } }
+  text-align: center;
+}
+
+.mobile-menu-wrap .mobile-menu-bar {
+  padding: 8px 10px;
+  margin: 1%;
+  position: absolute;
+  right: 1%;
+  z-index: 20;
+  margin-right: 0;
+}
+
+.mobile-menu-wrap .mobile-menu-bar i {
+  color: #fff;
+  font-size: 3rem;
+  border: 1px solid #fff;
+  padding: 3px 10px;
+}
+
+.mobile-menu-wrap ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mobile-menu-wrap ul li {
+  list-style: none;
+}
+
+.mobile-menu-wrap ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 3rem;
+  padding: 30px;
+  display: block;
+}
+
+
+/* 
+  Css for main-section          =================================================
+*/
 
 .main-section {
   position: relative;
   text-align: left;
   background: #0e0e0e17;
-  padding: 50px; }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .main-section {
-      min-height: 100vh; } }
-  @media (max-width: 576px) {
-    .main-section .para li {
-      font-size: 2rem; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .main-section .para li {
-      font-size: 3rem; } }
+  padding: 50px 30px;
+}
+
+
+/* 
+  Css for Work-history          =================================================
+*/
 
 .work-history {
   margin-bottom: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 2rem; }
-  .work-history .company-name {
-    line-height: 0px;
-    font-weight: bold;
-    font-size: 2rem; }
-    @media (max-width: 576px) {
-      .work-history .company-name {
-        font-size: 2rem;
-        line-height: 25px; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .work-history .company-name {
-        font-size: 3rem;
-        line-height: 25px; } }
-  @media (max-width: 576px) {
-    .work-history .period {
-      font-size: 1.7rem; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .work-history .period {
-      font-size: 2.5rem; } }
-  .work-history .address {
-    font-size: 2rem; }
-    @media (max-width: 576px) {
-      .work-history .address {
-        font-size: 1.7rem; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .work-history .address {
-        font-size: 2.5rem; } }
-  .work-history .details {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    margin-top: 22px;
-    font-size: 2rem;
-    color: #000; }
-    @media (max-width: 576px) {
-      .work-history .details {
-        font-size: 2rem;
-        line-height: 3rem;
-        margin-top: 0px; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .work-history .details {
-        font-size: 3rem;
-        line-height: 3rem; } }
+  font-size: 2rem;
+}
+
+.work-history .company-name {
+  line-height: 0px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.work-history .address {
+  font-size: 2rem;
+}
+
+.work-history .details {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: -8px;
+  font-size: 2rem;
+  color: #000;
+}
 
 .section-margin {
   margin-bottom: 30px;
-  margin-top: 60px; }
+}
+
+
+/* 
+  Css for contact-details        =================================================
+*/
 
 .contact-details {
   display: inline-block;
-  text-align: center; }
-  .contact-details h3 {
-    font-weight: bold;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 2rem; }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .contact-details h3 {
-        font-size: 3rem; } }
-  .contact-details p {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 2rem; }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .contact-details p {
-        font-size: 2rem; } }
+  text-align: center;
+}
 
-.form-details h2, .form-details h4 {
-  font-family: Georgia, "Times New Roman", Times, serif; }
+.contact-details h3 {
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+
+.contact-details p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+
+
+/* 
+  Css for form-details       =================================================
+*/
+
+.form-details h2,
+.form-details h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 .form-details #submit {
   background: #23B0CC;
-  color: #fff; }
-.form-details .form {
-  margin-top: 20px; }
+  color: #fff;
+}
 
-/*# sourceMappingURL=style.css.map */
+.form-details .form {
+  margin-top: 20px;
+}
+
+
+/*
+  Start Css for Table Device =================================================
+*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .paragraph {
+    font-size: 2.5rem;
+  }
+  .main-wrap i {
+    font-size: 6rem;
+  }
+  .content-wrap {
+    width: 100%;
+    padding-top: 0px;
+  }
+  .main-content .left-section {
+    border-bottom: 30px solid #23B0CC;
+  }
+  .main-content .left-section h2 {
+    font-size: 5rem;
+  }
+  .main-content .left-section .paragraph {
+    font-size: 3rem;
+  }
+  .main-content .left-section img {
+    width: 75%;
+    margin-top: 100px;
+  }
+  .main-content .left-section h3 {
+    font-size: 4rem;
+  }
+  .main-content .right-section .content {
+    width: 100%;
+  }
+  .portfolio .portfolio-box {
+    width: 47%;
+    margin: 0px 0px 8px 0px;
+    padding: 15px;
+  }
+  .portfolio .portfolio-box h3 {
+    font-size: 3.5rem;
+  }
+  .portfolio .portfolio-box p {
+    font-size: 3.1rem;
+    font-weight: normal;
+  }
+  .mobile-menu-wrap .mobile-menu-bar i {
+    font-size: 6rem;
+  }
+  .mobile-menu-wrap ul li a {
+    font-size: 6rem;
+  }
+  .main-section {
+    min-height: 100vh;
+    padding-top: 90px;
+  }
+  .main-section .paragraph li {
+    font-size: 3rem;
+  }
+  .work-history .company-name {
+    font-size: 3rem;
+    line-height: 30px;
+  }
+  .work-history .period {
+    font-size: 2.5rem;
+  }
+  .work-history .address {
+    font-size: 2.5rem;
+  }
+  .work-history .details {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-top: 10px;
+  }
+  .contact-details {
+    font-size: 3rem;
+  }
+  .contact-details p {
+    font-size: 2.2rem;
+  }
+  .contact-details h3 {
+    font-size: 4rem;
+  }
+  .main-wrap .mobile-menu-bar i {
+    font-size: 6rem;
+    padding: 11px 19px;
+  }
+  .social-media i {
+    padding: 15px 23px;
+  }
+  .page-title {
+    font-size: 7rem;
+    margin-bottom: 30px;
+    margin-top: 60px;
+  }
+  .form-details h2 {
+    font-size: 46px;
+  }
+  .form-details h4 {
+    font-size: 32px;
+  }
+  .form-details .form label {
+    font-size: 32px;
+  }
+  .section-margin {
+    margin-top: 100px;
+  }
+}
+
+
+/*
+  Start Css for phone 
+*/
+
+@media (max-width: 576px) {
+  .paragraph {
+    font-size: 2.3rem;
+  }
+  .main-wrap i {
+    font-size: 2rem;
+  }
+  .content-wrap {
+    width: 100%;
+    padding-top: 0px;
+  }
+  .main-content .left-section {
+    border-bottom: 30px solid #23B0CC;
+    border-bottom: 10px solid #23B0CC;
+  }
+  .main-content .left-section h2 {
+    font-size: 3.5rem;
+  }
+  .main-content .left-section .paragraph {
+    font-size: 2rem;
+  }
+  .main-content .left-section img {
+    margin-top: 50px;
+  }
+  .main-content .left-section h3 {
+    font-size: 2.5rem;
+  }
+  .main-content .right-section .content {
+    width: 100%;
+  }
+  .portfolio {
+    margin-bottom: 20%;
+  }
+  .portfolio .portfolio-box {
+    width: 49%;
+    margin: 0px 0px 8px 0px;
+  }
+  .portfolio .portfolio-box p {
+    font-size: 1.8rem;
+  }
+  .mobile-menu-wrap .mobile-menu-bar i {
+    font-size: 4rem;
+  }
+  .mobile-menu-wrap ul li a {
+    font-size: 4rem;
+  }
+  .main-section .paragraph li {
+    font-size: 2rem;
+  }
+  .work-history .company-name {
+    font-size: 2rem;
+    line-height: 25px;
+  }
+  .work-history .period {
+    font-size: 1.7rem;
+  }
+  .work-history .address {
+    font-size: 1.7rem;
+  }
+  .work-history .details {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: -4px;
+  }
+}
+
+
