@@ -29,7 +29,7 @@ A live demo can be found [here](https://abdullahalharun-code.github.io/Resume/in
 ## Usages:
 After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are three html file index.html and other two html files(resume.html & contact.html) are inside pages folder. To preview the changes you make to the code, you can open the index.html file in your web browser.
 
-##UX
+## UX
 The site is a personal resume for myself, for quick look about person, skill, education, work experience and contact information. 
 
 Wireframes were created using figma application before any coding, you can find the wireframes link in [figma](https://www.figma.com/file/oPq19BOTnM8C2ZSWJpFygs/Resume?node-id=2%3A0).
